@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Confeitaria Âmbar — Doces artesanais em Sorriso, MT</title>
+<meta name="description" content="Confeitaria Âmbar: bolos personalizados, doces finos, macarons e tortas artesanais feitos à mão em Sorriso, MT. Faça sua encomenda.">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%231f3b2c'/%3E%3Ctext x='32' y='42' font-size='30' text-anchor='middle' fill='%23e4c77b' font-family='Georgia,serif'%3EÂ%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ======================= SPRITE DE ÍCONES (oculto) ======================= -->
+<svg class="icon-sprite" aria-hidden="true">
+  <defs>
+    <symbol id="icon-cake" viewBox="0 0 48 48"><path d="M6 26h36v14a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3V26Z"/><path d="M6 26c0-5 5-7 5-12 0 5 5 6 5 11M18 26c0-5 5-7 5-12 0 5 5 6 5 11M30 26c0-5 5-7 5-12 0 5 5 6 5 11" fill="none" stroke-linecap="round"/><path d="M4 26h40v6H4z" opacity=".55"/></symbol>
+    <symbol id="icon-pie" viewBox="0 0 48 48"><circle cx="24" cy="26" r="16"/><path d="M10 26a14 14 0 0 1 28 0" fill="none" stroke-linecap="round"/><path d="M24 12v4M16 14l2 4M32 14l-2 4" fill="none" stroke-linecap="round"/></symbol>
+    <symbol id="icon-truffle" viewBox="0 0 48 48"><circle cx="24" cy="24" r="14"/><path d="M14 20q10-6 20 0M14 27q10 6 20 0" fill="none" stroke-linecap="round" opacity=".6"/></symbol>
+    <symbol id="icon-macaron" viewBox="0 0 48 48"><ellipse cx="24" cy="15" rx="15" ry="8"/><ellipse cx="24" cy="33" rx="15" ry="8"/><rect x="9" y="19" width="30" height="10" rx="3"/></symbol>
+    <symbol id="icon-cupcake" viewBox="0 0 48 48"><path d="M12 22h24l-3 18a3 3 0 0 1-3 3H18a3 3 0 0 1-3-3l-3-18Z"/><path d="M9 22a15 8 0 0 1 30 0Z"/><path d="M24 6c2 0 2 3 0 3s-2-3 0-3Z"/></symbol>
+    <symbol id="icon-gift" viewBox="0 0 48 48"><rect x="7" y="18" width="34" height="22" rx="2"/><rect x="7" y="18" width="34" height="7"/><rect x="21" y="6" width="6" height="34"/><path d="M24 18c0-7-9-10-9-3 0 3 9 3 9 3ZM24 18c0-7 9-10 9-3 0 3-9 3-9 3Z"/></symbol>
+    <symbol id="icon-leaf" viewBox="0 0 48 48" fill="none" stroke-width="2.6" stroke-linecap="round"><path d="M10 38C8 22 18 8 38 8c2 18-10 30-28 30Z"/><path d="M12 36C20 28 28 20 36 12"/></symbol>
+    <symbol id="icon-heart" viewBox="0 0 48 48"><path d="M24 40S6 28 6 16a10 10 0 0 1 18-6 10 10 0 0 1 18 6c0 12-18 24-18 24Z"/></symbol>
+    <symbol id="icon-scale" viewBox="0 0 48 48" fill="none" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6v36M14 12h20M24 12 8 14l6 14h20l6-14-16-2Z"/><path d="M8 28a6 6 0 0 0 12 0M28 28a6 6 0 0 0 12 0"/></symbol>
+    <symbol id="icon-box" viewBox="0 0 48 48" fill="none" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16 24 7l18 9-18 9-18-9Z"/><path d="M6 16v18l18 9 18-9V16M24 25v18"/></symbol>
+    <symbol id="icon-people" viewBox="0 0 48 48" fill="none" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="16" r="6"/><path d="M10 40c0-8 6-13 14-13s14 5 14 13"/></symbol>
+    <symbol id="icon-pin" viewBox="0 0 48 48" fill="none" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M24 44S10 28 10 18a14 14 0 1 1 28 0c0 10-14 26-14 26Z"/><circle cx="24" cy="18" r="5"/></symbol>
+    <symbol id="icon-clock" viewBox="0 0 48 48" fill="none" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18"/><path d="M24 14v10l8 5"/></symbol>
+    <symbol id="icon-phone" viewBox="0 0 48 48" fill="none" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 6h6l3 9-5 4c2 6 6 10 12 12l4-5 9 3v6c0 3-3 5-6 5C20 40 8 28 8 12c0-3 2-6 6-6Z"/></symbol>
+    <symbol id="icon-mail" viewBox="0 0 48 48" fill="none" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="11" width="36" height="26" rx="3"/><path d="M7 13l17 14L41 13"/></symbol>
+    <symbol id="icon-insta" viewBox="0 0 48 48" fill="none" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="34" height="34" rx="9"/><circle cx="24" cy="24" r="8"/><circle cx="34" cy="14" r="1.6" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="icon-whats" viewBox="0 0 48 48" fill="none" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 39l2.6-7.7A16 16 0 1 1 18 37L9 39Z"/><path d="M17 18c0 8 5 13 13 13" /></symbol>
+    <symbol id="icon-face" viewBox="0 0 48 48" fill="none" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="34" height="34" rx="6"/><path d="M24 12v24M16 18h-2a4 4 0 0 0-4 4v18"/></symbol>
+    <symbol id="icon-quote" viewBox="0 0 48 48"><path d="M6 26c0-9 6-15 14-16v6c-5 1-8 4-8 9h8v13H6V26Zm22 0c0-9 6-15 14-16v6c-5 1-8 4-8 9h8v13H28V26Z"/></symbol>
+    <symbol id="icon-plus" viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- ======================= CABEÇALHO + NAVBAR ======================= -->
+<header class="site-header" id="topo">
+  <div class="header-inner">
+    <a href="#topo" class="brand" aria-label="Confeitaria Âmbar — início">
+      <span class="seal" aria-hidden="true"><span class="seal-ring"><svg viewBox="0 0 48 48" class="seal-icon"><use href="#icon-cake"/></svg></span></span>
+      <span class="brand-text">
+        <span class="brand-name">Confeitaria Âmbar</span>
+        <span class="brand-tag">doces de guardar</span>
+      </span>
+    </a>
+
+    <nav class="navbar" id="navbar" aria-label="Navegação principal">
+      <ul class="nav-list">
+        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+        <li><a href="#produtos" class="nav-link">Produtos</a></li>
+        <li><a href="#galeria" class="nav-link">Galeria</a></li>
+        <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+        <li><a href="#localizacao" class="nav-link">Onde estamos</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a href="#contato" class="btn btn-primary btn-contact">Fale conosco</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navbar" aria-label="Abrir menu de navegação">
+        <svg class="icon icon-open"><use href="#icon-menu"/></svg>
+        <svg class="icon icon-close-x"><use href="#icon-close"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <!-- ======================= HERO ======================= -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow-ribbon">Confeitaria artesanal · Sorriso, MT</p>
+        <h1 class="hero-title">Doces que <em>ficam guardados</em><br>na memória.</h1>
+        <p class="hero-subtitle">Bolos, tortas e doces finos feitos à mão, em pequenos lotes, com ingredientes selecionados — para o seu dia comum ou para aquela data que merece ser lembrada.</p>
+        <div class="hero-actions">
+          <a href="#produtos" class="btn btn-primary">Ver o cardápio <svg class="icon"><use href="#icon-arrow"/></svg></a>
+          <a href="#contato" class="btn btn-ghost">Fazer encomenda</a>
+        </div>
+        <ul class="hero-stats" aria-label="Destaques rápidos">
+          <li><strong>12</strong> anos de receitas</li>
+          <li><strong>100%</strong> artesanal</li>
+          <li><strong>+5.400</strong> bolos entregues</li>
+        </ul>
+      </div>
+
+      <div class="hero-display" aria-hidden="true">
+        <div class="display-case">
+          <span class="case-item case-item--1"><svg class="case-icon"><use href="#icon-cake"/></svg></span>
+          <span class="case-item case-item--2"><svg class="case-icon"><use href="#icon-macaron"/></svg></span>
+          <span class="case-item case-item--3"><svg class="case-icon"><use href="#icon-cupcake"/></svg></span>
+          <span class="case-item case-item--4"><svg class="case-icon"><use href="#icon-pie"/></svg></span>
+          <span class="case-shelf"></span>
+        </div>
+      </div>
+    </div>
+    <svg class="hero-wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 C 240 60, 480 0, 720 30 C 960 60, 1200 0, 1440 30 V60 H0 Z"></path></svg>
+  </section>
+
+  <!-- ======================= SOBRE A EMPRESA ======================= -->
+  <section class="section" id="sobre">
+    <div class="section-inner">
+      <p class="eyebrow-ribbon">Sobre a Âmbar</p>
+      <h2 class="section-title">De uma cozinha pequena a um endereço para celebrar</h2>
+
+      <div class="sobre-grid">
+        <div class="sobre-historia">
+          <p>A Confeitaria Âmbar começou em 2014, na cozinha de casa, quando a confeiteira Helena Marin passou a vender brigadeiros gourmet para os vizinhos de Sorriso. O boca a boca virou encomendas, as encomendas viraram uma equipe, e a equipe abriu uma loja própria — sem nunca abandonar o jeito artesanal de fazer as coisas.</p>
+          <p>Hoje seguimos a mesma receita de sempre: poucos doces por vez, ingredientes que a gente confia e atenção a cada detalhe, do recheio ao laço da caixa.</p>
+        </div>
+
+        <div class="sobre-cards">
+          <div class="mini-card">
+            <svg class="icon icon-accent"><use href="#icon-heart"/></svg>
+            <h3>Missão</h3>
+            <p>Adoçar momentos importantes com doces artesanais de alta qualidade, feitos com cuidado do início ao fim.</p>
+          </div>
+          <div class="mini-card">
+            <svg class="icon icon-accent"><use href="#icon-leaf"/></svg>
+            <h3>Visão</h3>
+            <p>Ser a confeitaria de referência da região, lembrada pelo cuidado artesanal e pela experiência em cada encomenda.</p>
+          </div>
+          <div class="mini-card">
+            <svg class="icon icon-accent"><use href="#icon-scale"/></svg>
+            <h3>Valores</h3>
+            <p>Qualidade sem pressa, ingredientes selecionados, atendimento próximo e respeito por quem trabalha com a gente.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= DIFERENCIAIS (opcional) ======================= -->
+  <section class="section section--alt" id="diferenciais">
+    <div class="section-inner">
+      <p class="eyebrow-ribbon">Por que a Âmbar</p>
+      <h2 class="section-title">Pequenos detalhes que fazem diferença</h2>
+
+      <div class="diferenciais-grid">
+        <div class="dif-card">
+          <svg class="icon icon-accent"><use href="#icon-scale"/></svg>
+          <h3>Receitas próprias</h3>
+          <p>Desenvolvidas e ajustadas pela nossa equipe ao longo de mais de uma década.</p>
+        </div>
+        <div class="dif-card">
+          <svg class="icon icon-accent"><use href="#icon-leaf"/></svg>
+          <h3>Ingredientes selecionados</h3>
+          <p>Sem conservantes ou corantes artificiais — só o que a gente colocaria na própria mesa.</p>
+        </div>
+        <div class="dif-card">
+          <svg class="icon icon-accent"><use href="#icon-cake"/></svg>
+          <h3>Pequenos lotes</h3>
+          <p>Produção artesanal, nunca em escala industrial, com atenção a cada peça.</p>
+        </div>
+        <div class="dif-card">
+          <svg class="icon icon-accent"><use href="#icon-box"/></svg>
+          <h3>Embalagem com cuidado</h3>
+          <p>Caixas e laços pensados para chegar tão bonitos quanto saíram do forno.</p>
+        </div>
+        <div class="dif-card">
+          <svg class="icon icon-accent"><use href="#icon-people"/></svg>
+          <h3>Atendimento próximo</h3>
+          <p>Acompanhamos cada encomenda especial do primeiro contato até a entrega.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= PRODUTOS / SERVIÇOS ======================= -->
+  <section class="section" id="produtos">
+    <div class="section-inner">
+      <p class="eyebrow-ribbon">Cardápio</p>
+      <h2 class="section-title">Produtos e serviços</h2>
+      <p class="section-lead">Tudo feito sob encomenda, com prazo combinado direto com você. Os valores abaixo são ponto de partida — cada criação é orçada conforme tamanho e personalização.</p>
+
+      <div class="produtos-grid">
+        <article class="produto-card">
+          <span class="produto-icon"><svg><use href="#icon-cake"/></svg></span>
+          <h3>Bolos personalizados</h3>
+          <p>Decorados para aniversários, casamentos, chá-revelação e outras datas especiais.</p>
+          <span class="produto-preco">a partir de R$ 180</span>
+        </article>
+        <article class="produto-card">
+          <span class="produto-icon"><svg><use href="#icon-pie"/></svg></span>
+          <h3>Tortas doces &amp; salgadas</h3>
+          <p>Receitas clássicas da casa e criações exclusivas, em tamanho individual ou família.</p>
+          <span class="produto-preco">a partir de R$ 90</span>
+        </article>
+        <article class="produto-card">
+          <span class="produto-icon"><svg><use href="#icon-truffle"/></svg></span>
+          <h3>Doces finos</h3>
+          <p>Brigadeiros, trufas e bem-casados para festas, mesas de doces e lembrancinhas.</p>
+          <span class="produto-preco">a partir de R$ 65 / cento</span>
+        </article>
+        <article class="produto-card">
+          <span class="produto-icon"><svg><use href="#icon-macaron"/></svg></span>
+          <h3>Macarons artesanais</h3>
+          <p>Mais de 12 sabores, montados diariamente em pequenos lotes.</p>
+          <span class="produto-preco">a partir de R$ 48 / caixa</span>
+        </article>
+        <article class="produto-card">
+          <span class="produto-icon"><svg><use href="#icon-cupcake"/></svg></span>
+          <h3>Cupcakes &amp; mini doces</h3>
+          <p>Perfeitos para mesas de festa e eventos corporativos, com cobertura à sua escolha.</p>
+          <span class="produto-preco">a partir de R$ 70 / dúzia</span>
+        </article>
+        <article class="produto-card">
+          <span class="produto-icon"><svg><use href="#icon-gift"/></svg></span>
+          <h3>Criações sob encomenda</h3>
+          <p>Tem uma ideia diferente em mente? Desenhamos o doce junto com você.</p>
+          <span class="produto-preco">sob consulta</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= NÚMEROS DA EMPRESA (opcional) ======================= -->
+  <section class="numeros" id="numeros">
+    <div class="section-inner numeros-inner">
+      <div class="numero-item">
+        <span class="numero-valor" data-count="12">0</span>
+        <span class="numero-label">anos de história</span>
+      </div>
+      <div class="numero-item">
+        <span class="numero-valor" data-count="5400" data-suffix="+">0</span>
+        <span class="numero-label">bolos entregues</span>
+      </div>
+      <div class="numero-item">
+        <span class="numero-valor" data-count="18000" data-suffix="+">0</span>
+        <span class="numero-label">doces finos produzidos</span>
+      </div>
+      <div class="numero-item">
+        <span class="numero-valor" data-count="98" data-suffix="%">0</span>
+        <span class="numero-label">clientes satisfeitos</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= GALERIA DE FOTOS ======================= -->
+  <section class="section" id="galeria">
+    <div class="section-inner">
+      <p class="eyebrow-ribbon">Bastidores</p>
+      <h2 class="section-title">Galeria</h2>
+      <p class="section-lead">Um pouco do que acontece entre o forno e a caixa de presente. Clique em uma imagem para ampliar.</p>
+
+      <div class="galeria-grid">
+        <button class="galeria-item" data-caption="Vitrine da loja, sempre recheada de novidades.">
+          <svg class="galeria-icon" style="--c:var(--color-berry)"><use href="#icon-gift"/></svg>
+          <span class="galeria-label">Vitrine da loja</span>
+        </button>
+        <button class="galeria-item" data-caption="Decoração feita à mão, camada por camada.">
+          <svg class="galeria-icon" style="--c:var(--color-gold)"><use href="#icon-cake"/></svg>
+          <span class="galeria-label">Decoração artesanal</span>
+        </button>
+        <button class="galeria-item" data-caption="Caixa de macarons, montada na hora do pedido.">
+          <svg class="galeria-icon" style="--c:var(--color-green-soft)"><use href="#icon-macaron"/></svg>
+          <span class="galeria-label">Caixa de macarons</span>
+        </button>
+        <button class="galeria-item" data-caption="Mesa de doces montada para festa de aniversário.">
+          <svg class="galeria-icon" style="--c:var(--color-berry)"><use href="#icon-cupcake"/></svg>
+          <span class="galeria-label">Mesa de doces</span>
+        </button>
+        <button class="galeria-item" data-caption="Embalagem pensada para parecer um presente.">
+          <svg class="galeria-icon" style="--c:var(--color-gold)"><use href="#icon-box"/></svg>
+          <span class="galeria-label">Embalagem para presente</span>
+        </button>
+        <button class="galeria-item" data-caption="Bastidores da cozinha, onde tudo começa.">
+          <svg class="galeria-icon" style="--c:var(--color-green-soft)"><use href="#icon-pie"/></svg>
+          <span class="galeria-label">Bastidores da cozinha</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= DEPOIMENTOS (opcional) ======================= -->
+  <section class="section section--alt" id="depoimentos">
+    <div class="section-inner">
+      <p class="eyebrow-ribbon">Quem já provou</p>
+      <h2 class="section-title">Depoimentos</h2>
+
+      <div class="depoimentos-track" id="depoimentosTrack">
+        <article class="depoimento-card">
+          <svg class="icon icon-quote"><use href="#icon-quote"/></svg>
+          <p>"O bolo do casamento da minha filha ficou exatamente como combinamos — e o sabor surpreendeu todo mundo. Atenção do início ao fim."</p>
+          <strong>Mariana Costa</strong>
+          <span>Cliente desde 2021</span>
+        </article>
+        <article class="depoimento-card">
+          <svg class="icon icon-quote"><use href="#icon-quote"/></svg>
+          <p>"Encomendei doces finos para o evento da empresa em cima da hora e a equipe se organizou para entregar tudo no prazo. Recomendo de olhos fechados."</p>
+          <strong>João Pedro Lima</strong>
+          <span>Encomenda corporativa</span>
+        </article>
+        <article class="depoimento-card">
+          <svg class="icon icon-quote"><use href="#icon-quote"/></svg>
+          <p>"Os macarons são os melhores que já comi na cidade. Hoje é praticamente tradição encomendar uma caixa todo mês."</p>
+          <strong>Fernanda Ribeiro</strong>
+          <span>Cliente frequente</span>
+        </article>
+      </div>
+      <div class="depoimentos-nav">
+        <button id="depAnterior" aria-label="Depoimento anterior"><svg class="icon" style="transform:rotate(180deg)"><use href="#icon-arrow"/></svg></button>
+        <button id="depProximo" aria-label="Próximo depoimento"><svg class="icon"><use href="#icon-arrow"/></svg></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= EQUIPE (opcional) ======================= -->
+  <section class="section" id="equipe">
+    <div class="section-inner">
+      <p class="eyebrow-ribbon">Quem faz acontecer</p>
+      <h2 class="section-title">Equipe</h2>
+
+      <div class="equipe-grid">
+        <article class="equipe-card">
+          <span class="equipe-avatar">HM</span>
+          <h3>Helena Marin</h3>
+          <span class="equipe-cargo">Fundadora &amp; chef confeiteira</span>
+          <p>Criou as primeiras receitas da Âmbar e ainda prova pessoalmente cada novo sabor antes de ir ao cardápio.</p>
+        </article>
+        <article class="equipe-card">
+          <span class="equipe-avatar">CD</span>
+          <h3>Camila Duarte</h3>
+          <span class="equipe-cargo">Confeiteira de bolos artísticos</span>
+          <p>Responsável pelas decorações mais elaboradas — de casamentos a bolos temáticos infantis.</p>
+        </article>
+        <article class="equipe-card">
+          <span class="equipe-avatar">RS</span>
+          <h3>Rafael Souza</h3>
+          <span class="equipe-cargo">Atendimento &amp; encomendas</span>
+          <p>O primeiro contato com quem chega à loja ou manda mensagem — cuida de cada detalhe do pedido.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= FAQ ======================= -->
+  <section class="section section--alt" id="faq">
+    <div class="section-inner section-inner--narrow">
+      <p class="eyebrow-ribbon">Dúvidas frequentes</p>
+      <h2 class="section-title">Perguntas frequentes</h2>
+
+      <div class="accordion" id="accordion">
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Com quanto tempo de antecedência devo fazer minha encomenda?</span>
+            <svg class="icon icon-plus"><use href="#icon-plus"/></svg>
+          </button>
+          <div class="accordion-panel"><p>Para bolos simples, pedimos pelo menos 3 dias. Para bolos personalizados, casamentos ou grandes quantidades de doces finos, o ideal é reservar com 15 a 30 dias de antecedência.</p></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Vocês entregam em domicílio?</span>
+            <svg class="icon icon-plus"><use href="#icon-plus"/></svg>
+          </button>
+          <div class="accordion-panel"><p>Sim, entregamos em toda a região de Sorriso. A taxa de entrega varia conforme a distância e é informada no momento do orçamento.</p></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Existem opções sem lactose, sem açúcar ou veganas?</span>
+            <svg class="icon icon-plus"><use href="#icon-plus"/></svg>
+          </button>
+          <div class="accordion-panel"><p>Sim! Trabalhamos com versões sem lactose, com adoçantes naturais e algumas receitas veganas. Conte pra gente sobre a restrição na hora do pedido.</p></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Como funciona o pagamento e o sinal da encomenda?</span>
+            <svg class="icon icon-plus"><use href="#icon-plus"/></svg>
+          </button>
+          <div class="accordion-panel"><p>Pedimos 50% de sinal para confirmar a encomenda (Pix ou cartão) e o restante na entrega ou retirada. Para encomendas grandes, parcelamos em até 3x no cartão.</p></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Posso personalizar sabor, tamanho e decoração do bolo?</span>
+            <svg class="icon icon-plus"><use href="#icon-plus"/></svg>
+          </button>
+          <div class="accordion-panel"><p>Sim, esse é o nosso forte. Conversamos sobre sabor, recheio, tamanho e estilo de decoração antes de fechar o orçamento — e mandamos uma prévia do design quando possível.</p></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>A Âmbar atende eventos e festas corporativas?</span>
+            <svg class="icon icon-plus"><use href="#icon-plus"/></svg>
+          </button>
+          <div class="accordion-panel"><p>Sim, fazemos mesas de doces e kits para eventos corporativos, formaturas e casamentos, com opção de marca personalizada na embalagem.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= LOCALIZAÇÃO ======================= -->
+  <section class="section" id="localizacao">
+    <div class="section-inner">
+      <p class="eyebrow-ribbon">Venha provar</p>
+      <h2 class="section-title">Onde estamos</h2>
+
+      <div class="local-grid">
+        <div class="local-info">
+          <div class="local-line"><svg class="icon icon-accent"><use href="#icon-pin"/></svg><p>Avenida Brasil, 1450 — Centro<br>Sorriso, MT — CEP 78890-000</p></div>
+          <div class="local-line"><svg class="icon icon-accent"><use href="#icon-clock"/></svg><p>Terça a sábado: 9h às 19h<br>Domingo: 9h às 13h · Segunda: fechado</p></div>
+          <div class="local-line"><svg class="icon icon-accent"><use href="#icon-phone"/></svg><p>(66) 99999-1234</p></div>
+          <a class="btn btn-ghost btn-small" href="https://www.google.com/maps?q=Sorriso+Mato+Grosso" target="_blank" rel="noopener">Abrir no Google Maps</a>
+        </div>
+        <div class="local-map">
+          <iframe
+            title="Mapa com a localização da Confeitaria Âmbar em Sorriso, MT"
+            src="https://maps.google.com/maps?q=Sorriso,%20Mato%20Grosso&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= CONTATO ======================= -->
+  <section class="section section--alt" id="contato">
+    <div class="section-inner">
+      <p class="eyebrow-ribbon">Vamos conversar</p>
+      <h2 class="section-title">Fale com a gente</h2>
+      <p class="section-lead">Conte a data, a quantidade e a ideia que você tem em mente — respondemos o mais rápido possível.</p>
+
+      <div class="contato-grid">
+        <form class="contato-form" id="contatoForm" novalidate>
+          <div class="form-row">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" autocomplete="name" required>
+            <span class="form-error" data-error-for="nome"></span>
+          </div>
+          <div class="form-row form-row--split">
+            <div>
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+              <span class="form-error" data-error-for="email"></span>
+            </div>
+            <div>
+              <label for="telefone">Telefone / WhatsApp</label>
+              <input type="tel" id="telefone" name="telefone" autocomplete="tel" placeholder="(66) 9 9999-9999">
+              <span class="form-error" data-error-for="telefone"></span>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="assunto">Assunto</label>
+            <select id="assunto" name="assunto" required>
+              <option value="">Selecione…</option>
+              <option>Encomenda de bolo</option>
+              <option>Doces finos / mesa de festa</option>
+              <option>Evento corporativo</option>
+              <option>Outro assunto</option>
+            </select>
+            <span class="form-error" data-error-for="assunto"></span>
+          </div>
+          <div class="form-row">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            <span class="form-error" data-error-for="mensagem"></span>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+          <p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="contato-info">
+          <h3>Outros canais</h3>
+          <a class="contato-canal" href="https://wa.me/5566999991234" target="_blank" rel="noopener"><svg class="icon icon-accent"><use href="#icon-whats"/></svg><span>(66) 99999-1234</span></a>
+          <a class="contato-canal" href="mailto:contato@confeitariaambar.com.br"><svg class="icon icon-accent"><use href="#icon-mail"/></svg><span>contato@confeitariaambar.com.br</span></a>
+          <a class="contato-canal" href="https://instagram.com/confeitariaambar" target="_blank" rel="noopener"><svg class="icon icon-accent"><use href="#icon-insta"/></svg><span>@confeitariaambar</span></a>
+          <a class="contato-canal" href="https://facebook.com/confeitariaambar" target="_blank" rel="noopener"><svg class="icon icon-accent"><use href="#icon-face"/></svg><span>/confeitariaambar</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ======================= RODAPÉ ======================= -->
+<footer class="site-footer" id="rodape">
+  <div class="footer-ribbon"></div>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="seal seal--small" aria-hidden="true"><span class="seal-ring"><svg viewBox="0 0 48 48" class="seal-icon"><use href="#icon-cake"/></svg></span></span>
+      <div>
+        <p class="brand-name">Confeitaria Âmbar</p>
+        <p class="footer-tag">Doces artesanais em Sorriso, MT desde 2014.</p>
+      </div>
+    </div>
+
+    <nav class="footer-links" aria-label="Links do rodapé">
+      <a href="#sobre">Sobre</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#faq">FAQ</a>
+      <a href="#localizacao">Localização</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="footer-social">
+      <a href="https://instagram.com/confeitariaambar" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon"><use href="#icon-insta"/></svg></a>
+      <a href="https://facebook.com/confeitariaambar" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon"><use href="#icon-face"/></svg></a>
+      <a href="https://wa.me/5566999991234" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon"><use href="#icon-whats"/></svg></a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Avenida Brasil, 1450 — Centro, Sorriso, MT</p>
+    <p>&copy; <span id="anoAtual">2026</span> Confeitaria Âmbar. Empresa fictícia criada para fins acadêmicos.</p>
+  </div>
+</footer>
+
+<!-- ======================= MODAL DA GALERIA ======================= -->
+<div class="modal" id="galeriaModal" aria-hidden="true">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalCaption">
+    <button class="modal-close" data-close aria-label="Fechar"><svg class="icon"><use href="#icon-close"/></svg></button>
+    <svg class="modal-icon" id="modalIcon"><use href="#icon-cake"/></svg>
+    <p id="modalCaption"></p>
+  </div>
+</div>
+
+<button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+  <svg class="icon"><use href="#icon-arrow"/></svg>
+</button>
+
+<link rel="stylesheet" href="style.css">
+</body>
+</html>
